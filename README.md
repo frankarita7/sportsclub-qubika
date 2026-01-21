@@ -1,15 +1,23 @@
 
-Qubika Club – Playwright E2E Automation Tests
+Qubika Sports Club – Playwright E2E Automation Tests
 
 This project contains an end-to-end test suite built with Playwright and TypeScript for the Qubika Club web application.
 The goal of the project is to validate the main user flow, starting from authentication and covering basic navigation and category management.
 
 The framework follows a Page Object Model (POM) approach to keep tests readable, maintainable, and easy to scale.
 
-Tech stack
+--------------Tech stack----------------------
 - Playwright
 - TypeScript
 - Node.js
+
+------------Browser support--------------------------
+
+The test suite is configured to run against multiple browsers using Playwright projects.
+Currently, tests are executed on:
+- Chromium
+- Firefox
+This helps ensure cross-browser coverage and consistent behavior across modern browsers.
 
 
  --------------Project structure-----------------
@@ -60,7 +68,7 @@ The current test suite validates:
 - Category creation flow
 - Success toast validation
 
-Notes
+-----------Notes-------------
 
 Selectors prioritize user-facing elements.
 Assertions focus on critical behavior rather than implementation details.
