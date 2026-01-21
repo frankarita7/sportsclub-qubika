@@ -23,5 +23,5 @@ test('User can create a new category type', async ({ page }) => {
 
   await categories.assertPageLoaded();
   await categories.addCategory(`Category added by Franklin on ${Date.now()}`);
-  await categories.assertSuccess();
+  await categories.assertSuccessToast();
 });
